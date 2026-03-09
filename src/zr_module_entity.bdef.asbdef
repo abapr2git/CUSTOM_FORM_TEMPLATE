@@ -1,0 +1,28 @@
+unmanaged implementation in class zbp_r_module_entity unique;
+strict ( 1 );
+
+define behavior for ZR_MODULE_ENTITY //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create ( authorization : global );
+  //  update;
+  //  delete;
+  field ( readonly ) PurchaseRequisition;
+  //  association _Item { create; }
+  action render result [1] ZI_PDF_CNT;
+}
+
+//define behavior for ZR_MODULE_ENTITY_ITEM //alias <alias_name>
+////late numbering
+//lock dependent by _Header
+//authorization dependent by _Header
+////etag master <field_name>
+//{
+//  update;
+//  delete;
+//  field ( readonly ) PurchaseRequisition, PurchaseRequisitionItem;
+//  association _Header;
+//}

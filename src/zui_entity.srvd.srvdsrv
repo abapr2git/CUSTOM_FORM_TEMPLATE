@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service definition for ZC_MODULE_ENTITY'
+@ObjectModel.leadingEntity.name: 'ZC_MODULE_ENTITY'
+define service ZUI_ENTITY {
+  expose ZC_MODULE_ENTITY;
+  expose ZC_MODULE_ENTITY_ITEM;
+}

@@ -1,0 +1,35 @@
+// ********************************************************************
+// Change Log
+// --------------------------------------------------------------------
+// Date       | User       | Description
+// --------------------------------------------------------------------
+// DD MMM YYYY| DEVELOPER  | Initial Version
+// ********************************************************************
+@Metadata.layer: #CORE
+annotate entity ZC_MODULE_ENTITY with
+{
+  @UI.lineItem: [
+   { position: 10 },
+   { type: #FOR_ACTION, dataAction: 'render', label: 'Print PDF', inline :false,
+   --For get all row selected in 1 time
+   invocationGrouping: #CHANGE_SET }
+  ]
+  @UI.selectionField: [{ position: 10 }]
+  PurchaseRequisition;
+  @UI.hidden: true
+  PurReqnDescription;
+  @UI.lineItem:       [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  PurchaseRequisitionType;
+  @UI.lineItem: [{ position: 30  } ]
+  LastChangeDateTime;
+  @UI.hidden: true
+  FileName;
+  @UI.hidden: true
+  MimeType;
+  @UI.lineItem: [{position: 40, label: 'Print'         }]
+  Attachment;
+  @UI.lineItem: [{position: 50, label: 'Preview'       }]
+  Preview;
+
+}

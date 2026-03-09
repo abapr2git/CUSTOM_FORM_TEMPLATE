@@ -1,0 +1,5 @@
+CLASS zbp_r_module_entity DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zr_module_entity.
+ENDCLASS.
+
+CLASS zbp_r_module_entity IMPLEMENTATION.
+ENDCLASS.
